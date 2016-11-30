@@ -1,8 +1,7 @@
------
 ## MingAlert插件使用方法
 ### 引入文件
 1. 引入css &nbsp;:&nbsp;`<link rel=”stylesheet” href=”mingAlert.css”>`
-2. 引入js&nbsp;:&nbsp;`<script src=”mingAlert”><script>`
+2. 引入js&nbsp;:&nbsp;`<script src=”mingAlert.js”><script>`
 3. 设置js,(注意，何时调用，则何时显示弹框)
 
 > type 为alert类型，可填change，findback，register，login，content以及userDefine
