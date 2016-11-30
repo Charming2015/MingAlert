@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mingAlert</title>
+	<link rel="stylesheet" href="mingAlert.css">
+</head>
+<body>
+<button>content</button>
+<button>login</button>
+<button>register</button>
+<button>change</button>
+<button>findback</button>
+	<script src="mingAlert.js"></script>
+	<script>
+var btnList = document.getElementsByTagName('button')	
+for(var i in btnList ){
+	M.on(btnList[i],'click',function(){
+		var btnCont = this.innerHTML
+		MingAlert(btnCont,{})
+	})
+}
+MingAlert('userDefine',{
+	title:'自定义',
+	defineLabel:[
+		{id:'accountLabel',tips:'用户名:',placeholder:'用户名',errTips:'错误：用户名格式不对'},
+		{id:'accountLabel2',tips:'自定义:',placeholder:'自定义',errTips:'错误：用户名格式不对'}
+	],
+	success:function(){
+		console.log('你点击了确认')
+	}
+})
+
+	</script>
+</body>
+</html>
